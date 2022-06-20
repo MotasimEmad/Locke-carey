@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Message;
 use RealRashid\SweetAlert\Facades\Alert;
 
-
 class MessageController extends Controller
 {
     /**
