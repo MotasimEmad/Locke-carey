@@ -32,6 +32,9 @@
                 <a href="{{ route('projects.index') }}" class="py-2 px-2 md:px-4 font-semibold text-sm md:text-base text-red-500 rounded-md hover:underline transition-colors duration-200">Projects</a>
             </li>
             <li class="my-2 md:my-0">
+                <a href="{{ route('messages.index') }}" class="py-2 px-2 md:px-4 font-semibold text-sm md:text-base text-red-500 rounded-md hover:underline transition-colors duration-200">Messages</a>
+            </li>
+            <li class="my-2 md:my-0">
                 <a  href="{{ route('logout') }}"  onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();" class="py-2 px-2 md:px-4 bg-red-600 text-white hover:bg-red-400 hover:text-white font-bold rounded-md">{{ __('Logout') }}</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

@@ -103,25 +103,25 @@ class HomeController extends Controller
 
     public function ContactPageSubmit(Request $request)
     {
-        // $to = 'motasimdeveloper@email.com';
-        // $subject = $request->subject;
-        // $name = $request->name;
-        // $from = $request->email;
-        // $content = $request->message;
-        // $headers = "MIME-Version: 1.0" . "\r\n";
-        // $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-        // $headers .= 'From: '.$from."\r\n";
+        $to = 'motasimdeveloper@email.com';
+        $subject = $request->subject;
+        $name = $request->name;
+        $from = $request->email;
+        $content = $request->message;
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
+        $headers .= 'From: '.$from."\r\n";
 
-        // $subjectHeader = 'LockyCare - ';
-        // $subjectHeader .= $subject;
-        // $message = '<html><body>';
-        // $message .= '<h1>This email sending from: '.$from.'</h1>';
-        // $message .= '<p style="margin-top=5px">Name: '.$name.'</p>';
-        // $message .= '<p style="margin-top=5px">'.$content.'</p>';
-        // $message .= '</body></html>';
+        $subjectHeader = 'LockyCare - ';
+        $subjectHeader .= $subject;
+        $message = '<html><body>';
+        $message .= '<h1>This email sending from: '.$from.'</h1>';
+        $message .= '<p style="margin-top=5px">Name: '.$name.'</p>';
+        $message .= '<p style="margin-top=5px">'.$content.'</p>';
+        $message .= '</body></html>';
             
         // // Sending email
-        // mail($to, $subjectHeader, $message, $headers);
+        mail($to, $subjectHeader, $message, $headers);
         // $to = "xyz@somedomain.com";
         //  $subject = "This is subject";
          
@@ -140,8 +140,8 @@ class HomeController extends Controller
         //  }else {
         //     echo "Message could not be sent...";
         //  }
-        // Alert::success('Thanks for contact us', 'Email Successfully Send');
-        // return redirect('/contact');
+        Alert::success('Thanks for contact us', 'Email Successfully Send');
+        return redirect('/contact');
 
     // Subscribe my channel if you are using this code
     // Subscribe my channel if you are using this code
@@ -151,49 +151,6 @@ class HomeController extends Controller
 
 
   
-        $name = "EX - Joey";  // Name of your website or yours
-        $to = "tomail@gmail.com";  // mail of reciever
-        $subject = "Tutorial or any subject";
-        $body = "Send Mail Using PHPMailer - MS The Tech Guy";
-        $from = "yourmail@gmail.com";  // you mail
-        $password = "yourpassword";  // your mail password
-
-        // Ignore from here
-
-        include './mail/PHPMailer.php';
-        include './mail/SMTP.php';
-        include './mail/Exception.php';
-        $mail = new PHPMailer();
-
-        // To Here
-
-        //SMTP Settings
-        $mail->isSMTP();
-        // $mail->SMTPDebug = 3;  Keep It commented this is used for debugging                          
-        $mail->Host = "smtp.gmail.com"; 
-        $mail->SMTPAuth = true;
-        $mail->Username = $from;
-        $mail->Password = $password;
-        $mail->Port = 587;  // port
-        $mail->SMTPSecure = "tls";  // tls or ssl
-        $mail->smtpConnect([
-        'ssl' => [
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-            ]
-        ]);
-
-        //Email Settings
-        $mail->isHTML(true);
-        $mail->setFrom($from, $name);
-        $mail->addAddress($to); // enter email address whom you want to send
-        $mail->Subject = ("$subject");
-        $mail->Body = $body;
-        if ($mail->send()) {
-            echo "Email is sent!";
-        } else {
-            echo "Something is wrong: <br><br>" . $mail->ErrorInfo;
-        }
+       
     }
 }

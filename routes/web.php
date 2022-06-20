@@ -38,4 +38,5 @@ Route::post('send-email', [App\Http\Controllers\HomeController::class, 'ContactP
 Route::post('contact', [App\Http\Controllers\HomeController::class, 'sendEmail']);
 
 Route::resource('clients', App\Http\Controllers\ClientController::class);
+Route::resource('messages', App\Http\Controllers\MessageController::class);
 Route::resource('admin/projects', App\Http\Controllers\ProjectController::class);
