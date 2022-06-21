@@ -12,14 +12,6 @@
                 </p>
             </div>
         </section>
-
-        {{-- <div class="hidden lg:block">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-        </div> --}}
-        
     </section>
 
     <section>
@@ -48,14 +40,6 @@
                         <img src="./images/about.jpg" alt="header" class="rounded-3xl bg-cover w-full h-48 md:h-96" />
                     </div>
                 </div>
-
-                {{-- <div class="mt-0 lg:mt-0 lg:w-1/2">
-                    <div class="flex items-center justify-center lg:justify-end">
-                        <div class="max-w-lg">
-                            <img src="./svg/about_us.svg" alt="header" class="w-full md:h-96" />
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
@@ -120,7 +104,7 @@
             <div class="w-full">
                 <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
                     <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/fire-saftey-design.jpeg" alt="" class="h-60 w-72 rounded-md" />
+                        <img src="./images/main.jpg" alt="" class="h-60 w-72 rounded-md" />
                     </div>
                     <h1 class="font-bold text-gray-800">Fire Safety Design</h1>
                     <p class="text-left">
@@ -134,7 +118,7 @@
             <div class="w-full">
                 <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
                     <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/fire-saftey-eng.jpeg" alt="" class="h-60 w-72 rounded-md" />
+                        <img src="./images/services/arny-mogensen-rRgO49i8w2s-unsplash.jpg" alt="" class="h-60 w-72 rounded-md" />
                     </div>
                     <h1 class="font-bold text-gray-800">Fire Safety Engineering</h1>
                     <p class="text-left">
@@ -147,7 +131,7 @@
             <div class="w-full">
                 <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
                     <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/roofing.jpg" alt="" class="mb-6 h-60 w-72 rounded-md" />
+                        <img src="./images/services/roof.jpg" alt="" class="md:mb-8 h-60 w-72 rounded-md" />
                     </div>
                     <h1 class="font-bold text-gray-800">Façade and Roofing System Engineering Assessment and Inspection Services</h1>
                     <p class="text-left">
@@ -159,8 +143,8 @@
             </div>
             <div class="w-full">
                 <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
-                    <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/fire-saftey-man.jpg" alt="" class="h-60 w-72 rounded-md" />
+                    <div href="#" class="mb-20 items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
+                        <img src="./images/services/managment.jpg" alt="" class="w-72 rounded-md" />
                     </div>
                     <h1 class="font-bold text-gray-800">Fire Safety Management</h1>
                     <p class="text-left">
@@ -173,7 +157,7 @@
             <div class="w-full">
                 <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
                     <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/CFD1.png" alt="" class="mb-12 h-60 w-72 rounded-md" />
+                        <img src="./images/services/CFD1.png" alt="" class="lg:mb-8 h-60 w-72 rounded-md" />
                     </div>
                     <h1 class="font-bold text-gray-800">Smoke CFD & Evacuation Modelling</h1>
                     <p class="text-left">
@@ -187,7 +171,7 @@
             <div class="w-full">
                 <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
                     <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/AX036910.jpg" alt="" class="mb-6 h-60 w-72 rounded-md" />
+                        <img src="./images/services/inspection.jpeg" alt="" class="h-60 w-72 rounded-md" />
                     </div>
                     <h1 class="font-bold text-gray-800">Fire Safety Inspection & on Site Work</h1>
                     <p class="text-left">
@@ -203,7 +187,7 @@
         <div class="w-full my-4 mx-auto px-4">
             <div class="flex flex-col items-center p-8 space-y-3 border-2 border-gray-100 rounded-md shadow-md">
                 <div href="#" class="items-center inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                    <img src="./images/services/service1.jpg" alt="" class="h-60 w-72 rounded-md" />
+                    <img src="./images/services/hot-smoke-test.png" alt="" class="h-64 w-80 rounded-md" />
                 </div>
                 <h1 class="font-bold text-gray-800">Hot Smoke Test</h1>
                 {{-- <p class="text-left">

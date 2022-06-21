@@ -11,7 +11,7 @@
                     {{-- <div class="bg-blue-400 shadow-lg rounded-3xl absolute transform rotate-6 w-72 h-72"></div>
                     <div class="bg-white shadow-lg rounded-3xl absolute transform -rotate-6 w-72 h-72"></div> --}}
                     <div href="#" class="inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/services/fire-saftey-man.jpg" alt="header" class="h-72 w-full rounded-md" />
+                        <img src="./images/services/managment.jpg" alt="header" class="h-72 w-full rounded-md" />
                     </div>
                 </div>
             </div>

@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>LockeCarey</title>
+    <title>Locke Carey Fire Safety</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('../images/logo.png') }}"/>
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
