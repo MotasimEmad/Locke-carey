@@ -30,6 +30,7 @@ Route::get('/facade-and-roofing', [App\Http\Controllers\HomeController::class, '
 Route::get('/fire-safety-management', [App\Http\Controllers\HomeController::class, 'fire_safety_management']);
 Route::get('/smoke-cfd', [App\Http\Controllers\HomeController::class, 'smoke_cfd']);
 Route::get('/fire-safety-inspection', [App\Http\Controllers\HomeController::class, 'fire_safety_inspection']);
+Route::get('/hot-smoke-test', [App\Http\Controllers\HomeController::class, 'hot_smoke_test']);
 
 
 Route::post('send-email', [App\Http\Controllers\HomeController::class, 'ContactPageSubmit']);
@@ -40,3 +41,4 @@ Route::post('contact', [App\Http\Controllers\HomeController::class, 'sendEmail']
 Route::resource('clients', App\Http\Controllers\ClientController::class);
 Route::resource('messages', App\Http\Controllers\MessageController::class);
 Route::resource('admin/projects', App\Http\Controllers\ProjectController::class);
+

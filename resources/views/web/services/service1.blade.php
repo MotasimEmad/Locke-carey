@@ -7,11 +7,12 @@
     
         <section class="text-center">
             <div class="relative flex justify-center mt-12">
-                <div>
-                    {{-- <div class="bg-blue-400 shadow-lg rounded-3xl absolute transform rotate-6 w-80 h-72"></div> --}}
-                    {{-- <div class="bg-white shadow-lg rounded-3xl absolute transform -rotate-6 w-72 h-72"></div> --}}
+                <div class="flex flex-row justify-center py-2 px-4 md:text-center">
                     <div href="#" class="inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
-                        <img src="./images/main.jpg" alt="header" class="h-72 w-full rounded-md" />
+                        <img src="./images/services/deisgn.jpg" alt="header" class="h-72 w-full rounded-md" />
+                    </div>
+                    <div href="#" class="inline-flex p-2 text-red-500 capitalize transition-colors duration-200 transform">
+                        <img src="./images/services/no3.jpg" alt="header" class="h-72 w-full rounded-md" />
                     </div>
                 </div>
             </div>

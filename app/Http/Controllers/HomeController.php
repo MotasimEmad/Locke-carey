@@ -96,6 +96,11 @@ class HomeController extends Controller
         return view('web.services.service6');
     }
 
+    public function hot_smoke_test()
+    {
+        return view('web.services.service7');
+    }
+
     public function contact()
     {
         return view('web.contact');
@@ -103,54 +108,32 @@ class HomeController extends Controller
 
     public function ContactPageSubmit(Request $request)
     {
-        $to = 'motasimdeveloper@email.com';
-        $subject = $request->subject;
-        $name = $request->name;
-        $from = $request->email;
-        $content = $request->message;
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-        $headers .= 'From: '.$from."\r\n";
+        $mail = new PHPMailer(true);
 
-        $subjectHeader = 'LockyCare - ';
-        $subjectHeader .= $subject;
-        $message = '<html><body>';
-        $message .= '<h1>This email sending from: '.$from.'</h1>';
-        $message .= '<p style="margin-top=5px">Name: '.$name.'</p>';
-        $message .= '<p style="margin-top=5px">'.$content.'</p>';
-        $message .= '</body></html>';
-            
-        // // Sending email
-        mail($to, $subjectHeader, $message, $headers);
-        // $to = "xyz@somedomain.com";
-        //  $subject = "This is subject";
-         
-        //  $message = "<b>This is HTML message.</b>";
-        //  $message .= "<h1>This is headline.</h1>";
-         
-        //  $header = "From:abc@somedomain.com \r\n";
-        //  $header .= "Cc:afgh@somedomain.com \r\n";
-        //  $header .= "MIME-Version: 1.0\r\n";
-        //  $header .= "Content-type: text/html\r\n";
-         
-        //  $retval = mail ($to,$subject,$message,$header);
-         
-        //  if( $retval == true ) {
-        //     echo "Message sent successfully...";
-        //  }else {
-        //     echo "Message could not be sent...";
-        //  }
-        Alert::success('Thanks for contact us', 'Email Successfully Send');
-        return redirect('/contact');
+        try {
+            $mail->isSMTP();                                            //Send using SMTP
+            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+            $mail->Username   = 'motasimdeveloper@gmail.com';                     //SMTP username
+            $mail->Password   = 'kueldrzijdlqjomx';                               //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    // Subscribe my channel if you are using this code
-    // Subscribe my channel if you are using this code
-    // Subscribe my channel if you are using this code
-    // Subscribe my channel if you are using this code
-    // Subscribe my channel if you are using this code
+            //Recipients
+            $mail->setFrom($request->email, $request->name);
+            $mail->addAddress('motasimmax@gmail.com', 'Joe User');
 
+            //Content
+            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->Subject = $request->subject;
+            $mail->Body    = 'Send from: ' . $request->email . '<br> message: ' .  $request->message;
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-  
-       
+            $mail->send();
+            Alert::success('Thanks for contact us', 'Email Successfully Send');
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+        return redirect('/contact'); 
     }
 }

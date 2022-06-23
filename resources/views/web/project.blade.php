@@ -11,42 +11,28 @@
         <span class="inline-block w-1 h-1 bg-red-600 rounded-full"></span>
     </div>
 
-    <section class="grid grid-cols-2 md:grid-cols-3 my-4 gap-4 px-6">
-        <a href="/project_country/UAE" class="flex flex-col items-center justify-center max-w-sm mx-2">
-            <div class="w-full h-64 bg-gray-300 bg-bottom bg-cover rounded-lg shadow-lg" style="background-image: url('./maps/uae.jpg')"></div>
-            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-md md:w-full">
-                <h3 class="py-2 font-bold tracking-wide text-center uppercase">UAE</h3>
-            </div>
+    <section class="grid grid-cols-1 my-4 gap-4 px-6">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=850&q=80" alt="header" class="w-full h-64 lg:h-96 rounded-md" />
+    </section>
+
+    <div class="flex flex-col text-center justify-center px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-red-500 font-semibold text-xl">
+        <a class="mt-2" href="/project_country/UAE">
+            UAE
         </a>
-        <a href="/project_country/KSA" class="flex flex-col items-center justify-center max-w-sm mx-2">
-            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-lg object-top" style="background-image: url('./maps/ksa.jpg')"></div>
-            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-md md:w-full">
-                <h3 class="py-2 font-bold tracking-wide text-center uppercase">KSA</h3>
-            </div>
+        <a class="mt-2" href="/project_country/KSA">
+            KSA
         </a>
-        <a href="/project_country/Qatar" class="flex flex-col items-center justify-center max-w-sm mx-2">
-            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./maps/qatar.jpg')"></div>
-            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-md md:w-full">
-                <h3 class="py-2 font-bold tracking-wide text-center uppercase">Qatar</h3>
-            </div>
+        <a class="mt-2" href="/project_country/Qatar">
+            Qatar
         </a>
-        <a href="/project_country/Kuwait" class="flex flex-col items-center justify-center max-w-sm mx-2">
-            <div class="w-full h-64 bg-gray-300 bg-top bg-cover rounded-lg shadow-lg" style="background-image: url(./maps/kuwait.jpg)"></div>
-            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-md md:w-full">
-                <h3 class="py-2 font-bold tracking-wide text-center uppercase">Kuwait</h3>
-            </div>
+        <a class="mt-2" href="/project_country/Kuwait">
+            Kuwait
         </a>
-        <a href="/project_country/Bahrain" class="flex flex-col items-center justify-center max-w-sm mx-2">
-            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./maps/bahrain.jpg')"></div>
-            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-md md:w-full">
-                <h3 class="py-2 font-bold tracking-wide text-center uppercase">Bahrain</h3>
-            </div>
+        <a class="mt-2" href="/project_country/Bahrain">
+            Bahrain
         </a>
-        <a href="/project_country/Iraq" class="flex flex-col items-center justify-center max-w-sm mx-2">
-            <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./maps/iraq.jpg')"></div>
-            <div class="w-56 -mt-10 overflow-hidden bg-white rounded-md md:w-full">
-                <h3 class="py-2 font-bold tracking-wide text-center uppercase">Iraq</h3>
-            </div>
+        <a class="mt-2" href="/project_country/Iraq">
+            Iraq
         </a>
-   </section>
+    </div>
 @endsection

@@ -9,7 +9,7 @@
             <div class="flex flex-wrap justify-center lg:justify-between mx-4">
                 <div class="w-full lg:w-1/2 xl:w-5/12 px-4 shadow-2xl">
                     <div class="bg-white relative rounded-lg p-8 sm:p-12">
-                    <form action="{{ route('messages.store') }}" method="POST">
+                    <form action="/send-email" method="POST">
                         @csrf
                         <div class="mb-6">
                             <input
@@ -908,7 +908,6 @@
                         <h2 class="text-3xl font-semibold text-center text-gray-800">Get in touch</h2>
                         
                         <h2 class="text-3xl font-semibold text-center text-gray-800 mt-10">Dubai</h2>
-                        <p class="text-center">Liberty Building | Office 209 | Al Garhoud</p>
                         <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-2 text-center">
     
                             <a href="#" class="flex flex-col items-center px-4 py-3 text-gray-700 transition-colors duration-200 transform rounded-md hover:bg-blue-200">
@@ -926,12 +925,11 @@
                                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                 </svg>
     
-                                <span class="mt-2">fire@lockecarey.com</span>
+                                <span class="mt-2">info@lockecarey.com</span>
                             </a>
                         </div>
                         
                         <h2 class="text-3xl font-semibold text-center text-gray-800 mt-10">Abu Dhabi</h2>
-                        <p class="text-center">C 54 Building | Office 601 | Al Nahyan Camp</p>
                         <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-2 text-center">
     
                             <a href="#" class="flex flex-col items-center px-4 py-3 text-gray-700 transition-colors duration-200 transform rounded-md hover:bg-blue-200">
@@ -949,7 +947,7 @@
                                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                 </svg>
     
-                                <span class="mt-2">abhabid@lockecarey.com</span>
+                                <span class="mt-2">info@lockecarey.com</span>
                             </a>
                         </div>
                     </section>

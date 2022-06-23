@@ -11,10 +11,6 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('../images/logo.png') }}"/>
     <link href="/css/app.css" rel="stylesheet">
 
-    <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
-
-    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles
 </head>
@@ -43,17 +39,15 @@
                 </div>
                 <div class="mt-4 md:mt-0">
                     <span class="block mt-2 text-sm font-semibold">Dubai</span>
-                    <span class="block mt-2 text-sm">Liberty Building | Office 209 | Al Garhoud</span>
                     <span class="block mt-2 text-sm">T: +971 (0)42831321</span>
                     <span class="block mt-2 text-sm">F: +971 (0)42831377</span>
-                    <span class="block mt-2 text-sm">fire@lockecarey.com</span>
+                    <span class="block mt-2 text-sm">info@lockecarey.com</span>
                 </div>
                 <div class="mt-4 md:mt-0">
                     <span class="block mt-2 text-sm font-semibold">Abu Dhabi</span>
-                    <span class="block mt-2 text-sm mr-4">C 54 Building | Office 601 | Al Nahyan Camp</span>
                     <span class="block mt-2 text-sm">T: +971 (0)26431831</span>
                     <span class="block mt-2 text-sm">F: +971 (0)26431832</span>
-                    <span class="block mt-2 text-sm">abhabid@lockecarey.com</span>
+                    <span class="block mt-2 text-sm">info@lockecarey.com</span>
                 </div>
             </div>
 
@@ -72,7 +66,6 @@
     </footer>
 
     @include('sweetalert::alert')
-    @livewireScripts
-
+    
 </body>
 </html>
